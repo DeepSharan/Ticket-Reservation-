@@ -20,7 +20,29 @@ class Tourbus
     booked = 0;
     strcpy(destination, " ");
     strcpy(time, "8 : 00 am");
+  }
+  void input();
+  void show();
+  void display();
+  int getID()
+  {
+    return id;
+  }
+  char getDestination()
+  {
+    return destination;
+  }
+  char getTime()
+  {
+    return time;
+  }
+  int getmax()
+  {
     
   }
+  
+  
+  
+  
 
-  }
+}
