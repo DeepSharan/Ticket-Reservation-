@@ -3,6 +3,7 @@
 #include<iostream>
 #include<fstream>
 #include<conio.h>
+#include<string.h>
 
 class Tourbus
 {
@@ -11,6 +12,7 @@ class Tourbus
   char time[60];
   int maxseats;
   int booked;
+  int fare;
   
   public:
   Tourbus()
@@ -18,6 +20,7 @@ class Tourbus
     id = 0;
     maxseats = 60;
     booked = 0;
+    fare = 0;
     strcpy(destination, " ");
     strcpy(time, "8 : 00 am");
   }
@@ -40,12 +43,26 @@ class Tourbus
   {
     return maxseats;
   }
-  int book;
+  int getbook()
   {
     return booked;
   }
+  int getFare()
+  {
+    return fare;
+  }
   
-}
+};
+class Ticket
+{
+  
+  
+  
+  
+  
+  
+  
+  
   
 void Tourbus::input()
 {
@@ -77,7 +94,7 @@ void main()
  
   cin>>pr;
 
-  switch(ch)
+  switch(pr)
   {
     case 1:
     F.open("New.dat", ios::app : ios::binary);
@@ -107,6 +124,8 @@ void main()
     break;
   
     case 3:
+    F.open("New.dat", ios::app : ios::binary);
+    
     
   
   
